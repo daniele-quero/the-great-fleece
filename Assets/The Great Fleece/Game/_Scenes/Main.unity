@@ -11179,7 +11179,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &423392600
 Transform:
   m_ObjectHideFlags: 0
@@ -11219,6 +11219,8 @@ PlayableDirector:
     value: {fileID: 1829512211}
   - key: {fileID: -508856233168254753, guid: de672b0bc69af644e8f43c2ef250cf2c, type: 2}
     value: {fileID: 1607149168}
+  - key: {fileID: -749707574604573278, guid: de672b0bc69af644e8f43c2ef250cf2c, type: 2}
+    value: {fileID: 1295544372}
   m_ExposedReferences:
     m_References:
     - 07501e907d2a83940bca71323aea14d6: {fileID: 1829512209}
@@ -25754,6 +25756,12 @@ Animator:
     type: 3}
   m_PrefabInstance: {fileID: 1295544369}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1295544372 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1580602737510722, guid: 49be4103b035b448cb277ad3ac4b48f7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1295544369}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1303733393
 GameObject:
   m_ObjectHideFlags: 0
@@ -26572,7 +26580,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &1361990654
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -41153,7 +41161,7 @@ Camera:
     height: 1
   near clip plane: 0.1
   far clip plane: 5000
-  field of view: 25
+  field of view: 40
   orthographic: 0
   orthographic size: 10
   m_Depth: -1
@@ -41178,8 +41186,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2043896029}
-  m_LocalRotation: {x: 0.0696359, y: 0.92205524, z: -0.19711773, w: 0.32574713}
-  m_LocalPosition: {x: -4.710478, y: 3.458939, z: -104.84898}
+  m_LocalRotation: {x: -0.15093872, y: 0.82768005, z: -0.2538637, w: 0.473788}
+  m_LocalPosition: {x: 1.38, y: 2.5, z: -106.73}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
