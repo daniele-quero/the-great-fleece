@@ -14481,6 +14481,7 @@ GameObject:
   m_Component:
   - component: {fileID: 626388257}
   - component: {fileID: 626388258}
+  - component: {fileID: 626388259}
   m_Layer: 0
   m_Name: GameOver Vcam Aerial Shot
   m_TagString: Untagged
@@ -14529,6 +14530,25 @@ MonoBehaviour:
     FarClipPlane: 5000
     Dutch: 0
   m_ComponentOwner: {fileID: 2053677594}
+--- !u!95 &626388259
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 626388256}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &628789567
 GameObject:
   m_ObjectHideFlags: 0
@@ -22056,6 +22076,8 @@ PlayableDirector:
     value: {fileID: 2043896032}
   - key: {fileID: -6347748032265033994, guid: c9efb31062145124d804fe42e25cf7f5, type: 2}
     value: {fileID: 1172293242}
+  - key: {fileID: -5758568360337866680, guid: c9efb31062145124d804fe42e25cf7f5, type: 2}
+    value: {fileID: 626388259}
   m_ExposedReferences:
     m_References:
     - 67642e57ba1fb3641b7e3ebbe42af1f0: {fileID: 626388258}
@@ -41738,7 +41760,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2043896029}
-  m_LocalRotation: {x: -0.01074586, y: -0.07940549, z: -0.007118407, w: 0.66449904}
+  m_LocalRotation: {x: -0.034559358, y: -0.255373, z: -0.022893244, w: -0.9997853}
   m_LocalPosition: {x: -3.2686968, y: -1.01, z: -91.19}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
