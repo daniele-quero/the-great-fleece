@@ -9823,6 +9823,7 @@ GameObject:
   m_Component:
   - component: {fileID: 312275369}
   - component: {fileID: 312275370}
+  - component: {fileID: 312275371}
   m_Layer: 0
   m_Name: 'Darren Behind Shot '
   m_TagString: Untagged
@@ -9844,7 +9845,7 @@ Transform:
   - {fileID: 1812654261}
   m_Father: {fileID: 202367927}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 4, z: 4}
 --- !u!114 &312275370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9871,6 +9872,25 @@ MonoBehaviour:
     FarClipPlane: 5000
     Dutch: 0
   m_ComponentOwner: {fileID: 1812654261}
+--- !u!95 &312275371
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 312275368}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &312653847
 GameObject:
   m_ObjectHideFlags: 0
@@ -11635,6 +11655,7 @@ GameObject:
   m_Component:
   - component: {fileID: 405270327}
   - component: {fileID: 405270328}
+  - component: {fileID: 405270329}
   m_Layer: 0
   m_Name: Darren Close Shot 2
   m_TagString: Untagged
@@ -11649,14 +11670,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 405270326}
-  m_LocalRotation: {x: -0.110015415, y: -0.46031758, z: -0.057611853, w: 0.87902516}
-  m_LocalPosition: {x: -5.0809164, y: -0.4707327, z: 29.866135}
+  m_LocalRotation: {x: -0.11001532, y: -0.4603176, z: -0.057611804, w: 0.8790252}
+  m_LocalPosition: {x: -2.4, y: -0.4707327, z: 29.47}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 818975808}
   m_Father: {fileID: 202367927}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 5, y: 358, z: 9}
 --- !u!114 &405270328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11683,6 +11704,25 @@ MonoBehaviour:
     FarClipPlane: 5000
     Dutch: 0
   m_ComponentOwner: {fileID: 818975808}
+--- !u!95 &405270329
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 405270326}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &407951443
 GameObject:
   m_ObjectHideFlags: 0
@@ -20662,6 +20702,7 @@ GameObject:
   m_Component:
   - component: {fileID: 867480233}
   - component: {fileID: 867480234}
+  - component: {fileID: 867480235}
   m_Layer: 0
   m_Name: Guards Shot
   m_TagString: Untagged
@@ -20683,7 +20724,7 @@ Transform:
   - {fileID: 2040915558}
   m_Father: {fileID: 202367927}
   m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 1, y: 0, z: -6}
 --- !u!114 &867480234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20710,6 +20751,25 @@ MonoBehaviour:
     FarClipPlane: 5000
     Dutch: 0
   m_ComponentOwner: {fileID: 2040915558}
+--- !u!95 &867480235
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 867480232}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &869183904
 GameObject:
   m_ObjectHideFlags: 0
@@ -24458,6 +24518,22 @@ PlayableDirector:
     value: {fileID: 2043896032}
   - key: {fileID: -4721633614949120714, guid: 5f204c6e6193fc5489c42677fe1f41c6, type: 2}
     value: {fileID: 183210759}
+  - key: {fileID: 4370371463147802102, guid: 5f204c6e6193fc5489c42677fe1f41c6, type: 2}
+    value: {fileID: 1203075226}
+  - key: {fileID: 8259358037535658654, guid: 5f204c6e6193fc5489c42677fe1f41c6, type: 2}
+    value: {fileID: 312275371}
+  - key: {fileID: -4913390548989148445, guid: 5f204c6e6193fc5489c42677fe1f41c6, type: 2}
+    value: {fileID: 1494889454}
+  - key: {fileID: 5323175552393817588, guid: 5f204c6e6193fc5489c42677fe1f41c6, type: 2}
+    value: {fileID: 405270329}
+  - key: {fileID: 8958056025090385949, guid: 5f204c6e6193fc5489c42677fe1f41c6, type: 2}
+    value: {fileID: 1678293526}
+  - key: {fileID: -7603683878691527523, guid: 5f204c6e6193fc5489c42677fe1f41c6, type: 2}
+    value: {fileID: 867480235}
+  - key: {fileID: 2974636470562139585, guid: 5f204c6e6193fc5489c42677fe1f41c6, type: 2}
+    value: {fileID: 1754556472}
+  - key: {fileID: -2320395720592591139, guid: 5f204c6e6193fc5489c42677fe1f41c6, type: 2}
+    value: {fileID: 1512374310}
   m_ExposedReferences:
     m_References:
     - 71636b8a65944e24c96ed599f3d0c567: {fileID: 1927515442}
@@ -24473,6 +24549,7 @@ PlayableDirector:
     - 72b9919e3603b1d4a86b879d7fa9375f: {fileID: 933363341}
     - d37f381f0c7078f4db667cb5b1aa82b8: {fileID: 1754556471}
     - 1f41b0799e5d2f448a65a00e0d2d2774: {fileID: 405270328}
+    - 685d35b984ada6d48bdb87863bc5b4d0: {fileID: 546605892}
     - 7e3ea6e1c91312245a0bc3d629ff861e: {fileID: 183210758}
     - d7d75164332f12241b8c90164f60f6d8: {fileID: 312275370}
 --- !u!1001 &1075270148
@@ -26531,6 +26608,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1203075224}
   - component: {fileID: 1203075225}
+  - component: {fileID: 1203075226}
   m_Layer: 0
   m_Name: 'Darren Close Shot '
   m_TagString: Untagged
@@ -26546,13 +26624,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1203075223}
   m_LocalRotation: {x: -0.048464447, y: -0.7096467, z: -0.04905009, w: 0.70117545}
-  m_LocalPosition: {x: -2.818225, y: -0.9367622, z: 31.688412}
+  m_LocalPosition: {x: 0.03, y: -0.9367622, z: 31.688412}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 368063523}
   m_Father: {fileID: 202367927}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 3, y: 359, z: 2}
 --- !u!114 &1203075225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26579,6 +26657,25 @@ MonoBehaviour:
     FarClipPlane: 5000
     Dutch: 0
   m_ComponentOwner: {fileID: 368063523}
+--- !u!95 &1203075226
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203075223}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1208067363
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31676,6 +31773,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1494889452}
   - component: {fileID: 1494889453}
+  - component: {fileID: 1494889454}
   m_Layer: 0
   m_Name: 'Marble Floor Shot '
   m_TagString: Untagged
@@ -31690,7 +31788,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1494889451}
-  m_LocalRotation: {x: -0.09942902, y: 0.011348844, z: -0.0011340138, w: -0.9949793}
+  m_LocalRotation: {x: -0.099429, y: 0.011348844, z: -0.0011340134, w: -0.9949793}
   m_LocalPosition: {x: 1.1775286, y: 3.8634892, z: -73.49495}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -31724,6 +31822,25 @@ MonoBehaviour:
     FarClipPlane: 5000
     Dutch: 0
   m_ComponentOwner: {fileID: 937793277}
+--- !u!95 &1494889454
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1494889451}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1500425919
 GameObject:
   m_ObjectHideFlags: 0
@@ -32033,6 +32150,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1512374308}
   - component: {fileID: 1512374309}
+  - component: {fileID: 1512374310}
   m_Layer: 0
   m_Name: Sleeping Guard Far Shot
   m_TagString: Untagged
@@ -32047,14 +32165,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1512374307}
-  m_LocalRotation: {x: 0.0014734797, y: -0.9953615, z: 0.094946265, w: 0.015447048}
+  m_LocalRotation: {x: 0.00147348, y: -0.99536145, z: 0.09494629, w: 0.015447047}
   m_LocalPosition: {x: 1.7601159, y: 8.059794, z: -56.383835}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 74359132}
   m_Father: {fileID: 202367927}
   m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 11.413, y: -178.05, z: 0}
+  m_LocalEulerAnglesHint: {x: -1, y: 1, z: -3}
 --- !u!114 &1512374309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32081,6 +32199,25 @@ MonoBehaviour:
     FarClipPlane: 5000
     Dutch: 0
   m_ComponentOwner: {fileID: 74359132}
+--- !u!95 &1512374310
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1512374307}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1513969050
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34631,6 +34768,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1678293524}
   - component: {fileID: 1678293525}
+  - component: {fileID: 1678293526}
   m_Layer: 0
   m_Name: Discussing with Oliver Shot
   m_TagString: Untagged
@@ -34645,14 +34783,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1678293523}
-  m_LocalRotation: {x: 0.116272666, y: -0.27994484, z: 0.034179606, w: 0.9523358}
+  m_LocalRotation: {x: 0.11627266, y: -0.27994484, z: 0.034179606, w: 0.9523357}
   m_LocalPosition: {x: 2.5153828, y: 6.246517, z: 10.113082}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1601891522}
   m_Father: {fileID: 202367927}
   m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 4, y: 0, z: 6}
 --- !u!114 &1678293525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34679,6 +34817,25 @@ MonoBehaviour:
     FarClipPlane: 5000
     Dutch: 0
   m_ComponentOwner: {fileID: 1601891522}
+--- !u!95 &1678293526
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678293523}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1679868433
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36134,6 +36291,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1754556470}
   - component: {fileID: 1754556471}
+  - component: {fileID: 1754556472}
   m_Layer: 0
   m_Name: Security Camera Shot
   m_TagString: Untagged
@@ -36148,14 +36306,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1754556469}
-  m_LocalRotation: {x: 0.076422065, y: -0.8529846, z: -0.13049145, w: -0.49954867}
+  m_LocalRotation: {x: 0.07642207, y: -0.85298467, z: -0.13049147, w: -0.4995487}
   m_LocalPosition: {x: -2.431839, y: -0.061976433, z: -66.68562}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 736141055}
   m_Father: {fileID: 202367927}
   m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 7, y: 0, z: 7}
 --- !u!114 &1754556471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36182,6 +36340,25 @@ MonoBehaviour:
     FarClipPlane: 5000
     Dutch: 0
   m_ComponentOwner: {fileID: 736141055}
+--- !u!95 &1754556472
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754556469}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &1754598965 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4178501293864144, guid: 28e5f09782bb74f478387da2ccf0bd47,
@@ -37677,7 +37854,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4931160109606720, guid: 6c4f6fe08bd85514fa49752d89055191, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.55
+      value: -4.35
       objectReference: {fileID: 0}
     - target: {fileID: 4931160109606720, guid: 6c4f6fe08bd85514fa49752d89055191, type: 3}
       propertyPath: m_LocalRotation.w
@@ -46130,7 +46307,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2043896029}
-  m_LocalRotation: {x: 0.0066931797, y: -0.7914795, z: 0.0071165687, w: 0.3929051}
+  m_LocalRotation: {x: 0.0077214385, y: -0.91307294, z: 0.008209872, w: 0.3929051}
   m_LocalPosition: {x: 3.4464912, y: 1.2310544, z: 29.644043}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
