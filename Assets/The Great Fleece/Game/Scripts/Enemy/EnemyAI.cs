@@ -17,7 +17,7 @@ public class EnemyAI : MonoBehaviour
 
     void Start()
     {
-        _idleOnTarget = new WaitForSeconds(1f);
+        _idleOnTarget = new WaitForSeconds(2.0f);
         _patroStep = new WaitForSeconds(0.2f);
 
         if (waypoints != null && waypoints.Count > 0)
