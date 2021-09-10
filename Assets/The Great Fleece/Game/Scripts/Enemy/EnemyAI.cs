@@ -17,12 +17,12 @@ public class EnemyAI : MonoBehaviour
     private int _currentTargetId = -1;
     private int _direction = -1;
     private WaitForSeconds _idleOnTarget;
-    private WaitForSeconds _patroStep;
+    private WaitForSeconds _patrolStep;
 
     void Start()
     {
         _idleOnTarget = new WaitForSeconds(idleTime);
-        _patroStep = new WaitForSeconds(0.2f);
+        _patrolStep = new WaitForSeconds(0.2f);
 
         if (WaypointsGood())
         {
@@ -44,6 +44,16 @@ public class EnemyAI : MonoBehaviour
         return _currentTargetId;
     }
 
+    private void RecalculateRandomPath()
+    {
+        if (_currentTargetId == 0)
+        {
+            foreach (var mod in modifiers)
+                if (hasRandomPath && Random.Range(0, 2) == 1)
+                    mod.SwapWaypoints(waypoints);
+        }
+    }
+
     private IEnumerator PatrolCoroutine()
     {
         while (isPatrolling)
@@ -62,21 +72,7 @@ public class EnemyAI : MonoBehaviour
                 }
 
                 else
-                    yield return _patroStep; 
-            }
-        }
-    }
-
-    private void RecalculateRandomPath()
-    {
-        if (_currentTargetId == 0)
-        {
-            foreach (var mod in modifiers)
-            {
-                if (hasRandomPath && Random.Range(0,2)==1)
-                {
-                    mod.SwapWaypoints(waypoints);
-                }
+                    yield return _patrolStep;
             }
         }
     }
