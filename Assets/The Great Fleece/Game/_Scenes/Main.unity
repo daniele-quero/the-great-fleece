@@ -24328,6 +24328,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waypoints: []
+  isPatrolling: 0
   _agent: {fileID: 959338284}
 --- !u!195 &959338284
 NavMeshAgent:
@@ -25438,6 +25439,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waypoints: []
+  isPatrolling: 0
   _agent: {fileID: 1016492224}
 --- !u!195 &1016492224
 NavMeshAgent:
@@ -29221,6 +29223,7 @@ MonoBehaviour:
   - {fileID: 2147693323758603938}
   - {fileID: 1977884751}
   - {fileID: 899932648079226037}
+  isPatrolling: 1
   _agent: {fileID: 1210797982}
 --- !u!195 &1210797982
 NavMeshAgent:
