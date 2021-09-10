@@ -8,11 +8,14 @@ public class EnemyAI : MonoBehaviour
     public List<Transform> waypoints;
     public bool isPatrolling;
     public float idleTime = 3.5f;
-    private int _currentTargetId = -1;
-    private int _direction = -1;
+    public bool hasRandomPath;
     [SerializeField]
     private NavMeshAgent _agent;
 
+    public List<EnemyPatrolModifier> modifiers;
+
+    private int _currentTargetId = -1;
+    private int _direction = -1;
     private WaitForSeconds _idleOnTarget;
     private WaitForSeconds _patroStep;
 
@@ -50,13 +53,30 @@ public class EnemyAI : MonoBehaviour
                 if (transform.position == waypoints[_currentTargetId].position)
                 {
                     if (OnWaypointsLimits())
+                    {
+                        RecalculateRandomPath();
                         yield return _idleOnTarget;
+                    }
 
                     _agent.destination = waypoints[NextTarget()].position;
                 }
 
                 else
                     yield return _patroStep; 
+            }
+        }
+    }
+
+    private void RecalculateRandomPath()
+    {
+        if (_currentTargetId == 0)
+        {
+            foreach (var mod in modifiers)
+            {
+                if (hasRandomPath && Random.Range(0,2)==1)
+                {
+                    mod.SwapWaypoints(waypoints);
+                }
             }
         }
     }
