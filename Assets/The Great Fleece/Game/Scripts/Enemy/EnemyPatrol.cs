@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class EnemyAI : MonoBehaviour
+public class EnemyPatrol : MonoBehaviour
 {
     public List<Transform> waypoints;
     public bool isPatrolling;
@@ -75,6 +75,23 @@ public class EnemyAI : MonoBehaviour
                     yield return _patrolStep;
             }
         }
+    }
+
+    public void GoTo(Vector3 pos)
+    {
+        _agent.destination = pos;
+    }
+
+    private IEnumerator IdleRoutine(Vector3 pos)
+    {
+        while (Vector3.Distance(transform.position, pos) > 0.6f)
+        {
+            _agent.destination = pos;
+            yield return _patrolStep;
+        }
+        yield return _idleOnTarget;
+        if (WaypointsGood())
+            _agent.destination = waypoints[_currentTargetId].position;
     }
 
     #region Checks

@@ -7,10 +7,16 @@ public class PlayerInput : MonoBehaviour
     [SerializeField]
     private PlayerMovement _pm;
 
+    [SerializeField]
+    private TossCoin _tc;
+
     void Update()
     {
         if (Input.GetMouseButton(0))
             _pm.Move(ClickedPosition());
+
+        if (Input.GetMouseButtonDown(1))
+            _tc.TossCoinAt(ClickedPosition());
     }
 
     public Vector3 ClickedPosition()
@@ -19,13 +25,7 @@ public class PlayerInput : MonoBehaviour
         RaycastHit hit;
 
         Physics.Raycast(ray, out hit);
-
-        //DebugObjectOnTarget(hit.point);
         return hit.point;
     }
 
-    private void DebugObjectOnTarget(Vector3 pos)
-    {
-        GameObject.CreatePrimitive(PrimitiveType.Sphere).transform.position = pos;
-    }
 }
