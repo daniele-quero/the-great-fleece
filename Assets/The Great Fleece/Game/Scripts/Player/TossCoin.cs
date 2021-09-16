@@ -16,13 +16,21 @@ public class TossCoin : MonoBehaviour
     [SerializeField]
     private Animator _animator;
 
+    [SerializeField]
+    private TextManager _textManager;
+
     public void TossCoinAt(Vector3 position)
     {
         if (_coins > 0)
             if (Vector3.Distance(position, transform.position) < _maxTossDistance)
             {
+                position.y -= .0126f;
                 GameObject.Instantiate(_coin, position, Quaternion.identity);
+                _animator.SetTrigger("coinThrown");
                 _coins--;
             }
+            else
+                _textManager.CoinTooFarAlert();
+
     }
 }
