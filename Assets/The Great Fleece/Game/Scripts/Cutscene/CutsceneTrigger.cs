@@ -31,8 +31,7 @@ public class CutsceneTrigger : MonoBehaviour
     private IEnumerator ResetAtTheEndOfCutscene(float time)
     {
         SetActiveObjects(false);
-        yield return new WaitForSeconds(time);
-
+        yield return new WaitWhile(() => PlayState.Playing == _cutscene.GetComponent<PlayableDirector>().state);
         SetActiveObjects(true);
         _cutscene.SetActive(false);
         ResetMainCamera();
@@ -62,4 +61,5 @@ public class CutsceneTrigger : MonoBehaviour
         if (_aftermath.GetPersistentEventCount() > 0)
             _aftermath.Invoke();
     }
+
 }

@@ -11,13 +11,32 @@ public class WalkingController : MonoBehaviour
     [SerializeField]
     private NavMeshAgent _agent;
 
-    void Update()
+    [SerializeField]
+    private float _animWaitSec = 0.2f;
+    private WaitForSeconds _animWait;
+
+    private void Start()
     {
-        _animator.SetBool("isWalking", isWalking());
+        _animWait = new WaitForSeconds(_animWaitSec);
+        StartCoroutine(WalkingRoutine());
     }
 
     private bool isWalking()
     {
         return _agent.velocity != Vector3.zero;
+    }
+
+    private IEnumerator WalkingRoutine()
+    {
+        while (true)
+        {
+            _animator.SetBool("isWalking", isWalking());
+            yield return _animWait;
+        }
+    }
+
+    private void OnEnable()
+    {
+        Start();   
     }
 }
