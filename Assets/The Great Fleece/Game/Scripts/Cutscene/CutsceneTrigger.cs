@@ -18,6 +18,9 @@ public class CutsceneTrigger : MonoBehaviour
     [SerializeField]
     private UnityEvent _aftermath;
 
+    [SerializeField]
+    private bool _isLastCutscene = false;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
@@ -32,12 +35,15 @@ public class CutsceneTrigger : MonoBehaviour
     {
         SetActiveObjects(false);
         yield return new WaitWhile(() => PlayState.Playing == _cutscene.GetComponent<PlayableDirector>().state);
-        SetActiveObjects(true);
-        _cutscene.SetActive(false);
-        ResetMainCamera();
-        GetComponent<Collider>().enabled = false;
+        if(!_isLastCutscene)
+        {
+            SetActiveObjects(true);
+            _cutscene.SetActive(false);
+            ResetMainCamera();
+            GetComponent<Collider>().enabled = false;
 
-        PerformAftermath();
+            PerformAftermath(); 
+        }
     }
 
     private void SetActiveObjects(bool active)

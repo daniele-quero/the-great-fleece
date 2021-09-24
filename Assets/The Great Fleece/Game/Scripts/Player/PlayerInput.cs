@@ -12,11 +12,14 @@ public class PlayerInput : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButton(0))
-            _pm.Move(ClickedPosition());
+        if (Time.timeScale > 0)
+        {
+            if (Input.GetMouseButton(0))
+                _pm.Move(ClickedPosition());
 
-        if (Input.GetMouseButtonDown(1))
-            _tc.TossCoinAt(ClickedPosition());
+            if (Input.GetMouseButtonDown(1))
+                _tc.TossCoinAt(ClickedPosition());
+        }
     }
 
     public Vector3 ClickedPosition()

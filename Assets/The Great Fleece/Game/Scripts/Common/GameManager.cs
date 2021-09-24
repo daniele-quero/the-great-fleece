@@ -32,6 +32,9 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.S))
             SkipCutscene(GetCurrentCutscene());
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+            UIManager.Instance.TogglePause();
     }
 
     private void SkipCutscene(PlayableDirector current)

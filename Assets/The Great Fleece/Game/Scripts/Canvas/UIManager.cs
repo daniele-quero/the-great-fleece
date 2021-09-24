@@ -18,9 +18,17 @@ public class UIManager : MonoBehaviour
         }
     }
 
+    [SerializeField]
+    private GameObject _pauseMenu;
+
+    private void Awake()
+    {
+        _instance = this;
+    }
+
     public void RestartGame()
     {
-        SceneManager.LoadScene("Main");
+        SceneManager.LoadScene("Loading");
     }
 
     public void QuitGame()
@@ -31,4 +39,11 @@ public class UIManager : MonoBehaviour
         Application.Quit();
 #endif
     }
+
+    public void TogglePause()
+    {
+        Time.timeScale = 1f - Time.timeScale;
+        _pauseMenu.SetActive(!_pauseMenu.activeInHierarchy);
+    }
+
 }
